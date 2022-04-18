@@ -1,7 +1,5 @@
-
-
 set(tests
-    minimal
+    minimal qflip
 )
 
 foreach(test_name IN LISTS tests)
