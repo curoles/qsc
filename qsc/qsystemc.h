@@ -9,3 +9,4 @@
 
 #include "qsc/defines.h"
 #include "qsc/qflip.h"
+#include "qsc/qcnot.h"
