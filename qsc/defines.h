@@ -35,8 +35,14 @@ inline std::ostream& operator << (std::ostream& os, const qsc::Qubits& qubits) {
 }
 
 namespace sc_core {
+
 inline void sc_trace(sc_core::sc_trace_file* tf, const qsc::Qubits& /*qubits*/, const std::string& name) {
     sc_core::sc_trace(tf, "FIXME"/*qubits.to_string()*/, name);
 }
+
+inline void sc_trace(sc_core::sc_trace_file* /*tf*/, const std::vector<double>&, const std::string& /*name*/) {
+    //FIXME
+}
+
 }
 
